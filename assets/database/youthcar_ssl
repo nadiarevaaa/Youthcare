@@ -1,0 +1,540 @@
+-- phpMyAdmin SQL Dump
+-- version 5.2.0
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1
+-- Generation Time: Jul 08, 2023 at 05:26 PM
+-- Server version: 10.4.25-MariaDB
+-- PHP Version: 8.1.10
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `youthcar_ssl`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tb_card`
+--
+
+CREATE TABLE `tb_card` (
+  `card_name` varchar(30) NOT NULL,
+  `number` int(11) NOT NULL,
+  `bank_card` varchar(30) NOT NULL,
+  `id` int(11) NOT NULL,
+  `user_id` int(11) NOT NULL,
+  `card_desc` int(1) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `tb_card`
+--
+
+INSERT INTO `tb_card` (`card_name`, `number`, `bank_card`, `id`, `user_id`, `card_desc`) VALUES
+('Jihan Syahira Adnanda Putri', 987654321, 'BRI', 2, 1, 1),
+('nadia', 123456789, 'mandiri', 3, 4, 1),
+('diva ', 876543221, 'bca', 4, 5, 1),
+('Siti Rahayu', 4444, 'Bank F', 10, 6, 1),
+('Agus Susanto', 7777, 'Bank G', 11, 7, 1),
+('Iwan Prasetyo', 1234, 'Bank H', 12, 8, 1),
+('Rika Setiawan', 9876, 'Bank I', 13, 9, 1),
+('Santi Rahayu', 2222, 'Bank J', 14, 10, 1),
+('Dewi Lestari', 2147483647, 'Bank Name', 15, 11, 1),
+('Rudi Saputra', 2147483647, 'Bank Name', 16, 12, 1),
+('Lina Wijaya', 2147483647, 'Bank Name', 17, 13, 1),
+('Hendra Kusuma', 2147483647, 'Bank Name', 18, 14, 1),
+('Rina Setiawan', 2147483647, 'Bank Name', 19, 15, 1),
+('Dewi Lestari', 2147483647, 'Bank Name', 20, 16, 0),
+('Rudi Saputra', 2147483647, 'Bank Name', 21, 17, 0),
+('Lina Wijaya', 2147483647, 'Bank Name', 22, 18, 0),
+('Hendra Kusuma', 2147483647, 'Bank Name', 23, 19, 0),
+('Rina Setiawan', 2147483647, 'Bank Name', 24, 20, 0),
+('Lina', 2147483647, 'Bank Name', 25, 21, 0),
+('Arya', 2147483647, 'Bank Name', 26, 22, 0),
+('Riska', 2147483647, 'Bank Name', 27, 23, 0),
+('Agus Wahyu', 2147483647, 'Bank Name', 28, 24, 0),
+('Bambang', 2147483647, 'Bank Name', 29, 25, 0),
+('Sari', 2147483647, 'Bank Name', 30, 26, 0),
+('Doni', 2147483647, 'Bank Name', 31, 27, 0),
+('Ani  Wijaya', 2147483647, 'Bank Name', 32, 28, 0),
+('Fajar Mulya', 2147483647, 'Bank Name', 33, 29, 0),
+('Novita Kusuma', 2147483647, 'Bank Name', 34, 30, 0),
+('Tiara Ramadhani', 2147483647, 'Bank Name', 35, 31, 0),
+('Yogi Pratama', 2147483647, 'Bank Name', 36, 32, 0),
+('Diah Permatasari', 2147483647, 'Bank Name', 37, 33, 0),
+('Fadli Firmansyah', 2147483647, 'Bank Name', 38, 34, 0),
+('Nurul Hidayah', 2147483647, 'Bank Name', 39, 35, 0),
+('Yusuf Wibowo', 2147483647, 'Bank Name', 40, 36, 0),
+('Riri Indriani', 2147483647, 'Bank Name', 41, 37, 0),
+('Indra Saputra', 2147483647, 'Bank Name', 42, 38, 0),
+('Aisyah Putri', 2147483647, 'Bank Name', 43, 39, 0),
+('Yoga Kurniawan', 2147483647, 'Bank Name', 44, 40, 0),
+('Dewi Rahayu', 2147483647, 'Bank Name', 45, 41, 0),
+('Ahmad Syahid', 2147483647, 'Bank Name', 46, 42, 0),
+('Rina Dewi', 2147483647, 'Bank Name', 47, 43, 0),
+('Agus Hidayat', 2147483647, 'Bank Name', 48, 44, 0),
+('Mayang Sari', 2147483647, 'Bank Name', 49, 45, 0),
+('Arif Maulana', 2147483647, 'Bank Name', 50, 46, 0),
+('Siti Nurhayati', 2147483647, 'Bank Name', 51, 47, 0),
+('Andri Susanto', 2147483647, 'Bank Name', 52, 48, 0),
+('Nita Purnama', 2147483647, 'Bank Name', 53, 49, 0),
+('Hadi Santoso', 2147483647, 'Bank Name', 54, 50, 0),
+('Sinta Wijaya', 2147483647, 'Bank Name', 55, 51, 0),
+('Aryo Pratama', 2147483647, 'Bank Name', 56, 52, 0),
+('Adi Mulyadi', 2147483647, 'Bank Name', 57, 53, 0),
+('Rini Widya', 2147483647, 'Bank Name', 58, 54, 0),
+('Agus Tri', 2147483647, 'Bank Name', 59, 55, 0),
+('Lina Puspita', 2147483647, 'Bank Name', 60, 56, 0),
+('Yogi Prabowo', 2147483647, 'Bank Name', 61, 57, 0),
+('Lisa Wardhani', 2147483647, 'Bank Name', 62, 58, 0),
+('Ari Hermawan', 2147483647, 'Bank Name', 63, 59, 0),
+('Riri Santoso', 2147483647, 'Bank Name', 64, 60, 0),
+('Dewi Putri', 2147483647, 'Bank Name', 65, 61, 0),
+('Agus Ramadhan', 2147483647, 'Bank Name', 66, 62, 0),
+('Dina Hidayati', 2147483647, 'Bank Name', 67, 63, 0),
+('Anto Wibowo', 2147483647, 'Bank Name', 68, 64, 0),
+('Rina Nurhayati', 2147483647, 'Bank Name', 69, 65, 0),
+('Fajar Prasetyo', 2147483647, 'Bank Name', 70, 66, 0),
+('Lisa Purnama', 2147483647, 'Bank Name', 71, 67, 0),
+('Budi Awan', 2147483647, 'Bank Name', 72, 68, 0),
+('Siti Rachmawati', 2147483647, 'Bank Name', 73, 69, 0),
+('Yoga Santoso', 2147483647, 'Bank Name', 74, 70, 0),
+('Lina Hidayati', 2147483647, 'Bank Name', 75, 71, 0),
+('Joko Pangestu', 2147483647, 'Bank Name', 76, 72, 0),
+('Nita Anggraini', 2147483647, 'Bank Name', 77, 73, 0),
+('Agus Saputra', 2147483647, 'Bank Name', 78, 74, 0),
+('Santi Dewi', 2147483647, 'Bank Name', 79, 75, 0),
+('Rudi Pratama', 2147483647, 'Bank Name', 80, 76, 0),
+('Lina Kusuma', 2147483647, 'Bank Name', 81, 77, 0),
+('Andi Wibowo', 2147483647, 'Bank Name', 82, 78, 0),
+('Sari Putri', 2147483647, 'Bank Name', 83, 79, 0),
+('Agus Hermawan', 2147483647, 'Bank Name', 84, 80, 0),
+('Dewi Sari', 2147483647, 'Bank Name', 85, 81, 0),
+('Yoga Pangestu', 2147483647, 'Bank Name', 86, 82, 0),
+('Dian Nurhayati', 2147483647, 'Bank Name', 87, 83, 0),
+('Anto Purnama', 2147483647, 'Bank Name', 88, 84, 0),
+('Sari Ramadhani', 2147483647, 'Bank Name', 89, 85, 0),
+('Fajar Wahyudi', 2147483647, 'Bank Name', 90, 86, 0),
+('Lisa Pangestu', 2147483647, 'Bank Name', 91, 87, 0),
+('Budi Setiawan', 2147483647, 'Bank Name', 92, 88, 0),
+('Siti Mulyani', 2147483647, 'Bank Name', 93, 89, 0),
+('Yoga Wibowo', 2147483647, 'Bank Name', 94, 90, 0),
+('Lina Setiawan', 2147483647, 'Bank Name', 95, 91, 0),
+('Joko Saputra', 2147483647, 'Bank Name', 96, 92, 0),
+('Nita Dewi', 2147483647, 'Bank Name', 97, 93, 0),
+('Agus Anggraini', 2147483647, 'Bank Name', 98, 94, 0),
+('Santi Ramadhani', 2147483647, 'Bank Name', 99, 95, 0),
+('Rudi Wahyudi', 2147483647, 'Bank Name', 100, 96, 0),
+('Fajar Maulana', 2147483647, 'Bank Name', 101, 97, 0),
+('Dina Wijaya', 2147483647, 'Bank Name', 102, 98, 0),
+('Agus Setiawan', 2147483647, 'Bank Name', 103, 99, 0),
+('Lina Dewi', 2147483647, 'Bank Name', 104, 100, 0),
+('Yoga Purnama', 2147483647, 'Bank Name', 105, 101, 0),
+('Rani Santoso', 2147483647, 'Bank Name', 106, 102, 0),
+('Agus Hidayat', 2147483647, 'Bank Name', 107, 103, 0),
+('Lisa Wijaya', 2147483647, 'Bank Name', 108, 104, 0),
+('Dewi Ramadhani', 2147483647, 'Bank Name', 109, 105, 0),
+('Yogi Setiawan', 2147483647, 'Bank Name', 110, 106, 0),
+('Rina Hermawan', 2147483647, 'Bank Name', 111, 107, 0),
+('Dani Wijaya', 2147483647, 'Bank Name', 112, 108, 0),
+('Sari Ramadhani', 2147483647, 'Bank Name', 113, 109, 0),
+('Fajar Setiawan', 2147483647, 'Bank Name', 114, 110, 0),
+('Lisa Pangestu', 2147483647, 'Bank Name', 115, 111, 0),
+('Agus Saputra', 2147483647, 'Bank Name', 116, 112, 0),
+('Dewi Nurhayati', 2147483647, 'Bank Name', 117, 113, 0),
+('Yoga Ramadhani', 2147483647, 'Bank Name', 118, 114, 0),
+('Rani Hermawan', 2147483647, 'Bank Name', 119, 115, 0),
+('Dani Setiawan', 2147483647, 'Bank Name', 120, 116, 0);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tb_donation`
+--
+
+CREATE TABLE `tb_donation` (
+  `id` int(30) NOT NULL,
+  `name` varchar(30) NOT NULL,
+  `total` int(30) NOT NULL,
+  `target` int(30) NOT NULL,
+  `date` date NOT NULL,
+  `title` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `tb_donation`
+--
+
+INSERT INTO `tb_donation` (`id`, `name`, `total`, `target`, `date`, `title`) VALUES
+(1, 'Lulu Nuraikah', 9400000, 10000000, '2021-02-21', 'He got hit by a truck. Help Nico!'),
+(2, 'Safira Sekar', 0, 10000000, '2023-06-26', 'He got hit by a truck. Help Nico'),
+(3, 'Budi Santoso', 1000000, 5000000, '2023-06-10', 'Healthcare Equipment for Rural Clinics'),
+(4, 'Ratna Sari', 500000, 1000000, '2023-06-15', 'Medical Supplies for Orphanages'),
+(5, 'Joko Wibowo', 750000, 2000000, '2023-06-22', 'Maternal and Child Health Program'),
+(6, 'Rini Indrawati', 2000000, 5000000, '2023-06-25', 'Community Health Awareness Campaign'),
+(7, 'Putra Nugraha', 300000, 1500000, '2023-07-01', 'COVID-19 Vaccination Support');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tb_donator`
+--
+
+CREATE TABLE `tb_donator` (
+  `id` int(30) NOT NULL,
+  `user_id` int(30) NOT NULL,
+  `card_id` int(30) NOT NULL,
+  `amount` int(30) NOT NULL,
+  `first_name` varchar(30) NOT NULL,
+  `last_name` varchar(30) NOT NULL,
+  `email` varchar(30) NOT NULL,
+  `donation_id` int(30) NOT NULL,
+  `donation_date` datetime DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `tb_donator`
+--
+
+INSERT INTO `tb_donator` (`id`, `user_id`, `card_id`, `amount`, `first_name`, `last_name`, `email`, `donation_id`, `donation_date`) VALUES
+(1, 1, 2, 100000, 'Jihan', 'Syahira', 'jhsyah14@gmail.com', 1, '2021-02-21 00:00:00'),
+(2, 4, 3, 200000, 'Nadia', 'Reva', 'nadia@gmail.com', 2, '2023-06-26 00:00:00'),
+(3, 5, 4, 300000, 'Diva', 'Ivani', '21523217@gmail.com', 3, '2023-06-10 00:00:00'),
+(4, 6, 10, 400000, 'Santi', 'Williams', 'santi@example.com', 4, '2023-06-15 00:00:00'),
+(5, 7, 11, 500000, 'Agus', 'Brown', 'agus@example.com', 5, '2023-06-22 00:00:00'),
+(6, 8, 12, 600000, 'Tri', 'Ari', 'tri@example.com', 6, '2023-06-25 00:00:00'),
+(7, 9, 13, 700000, 'Iwan', 'Fales', 'iwan@example.com', 7, '2023-07-01 00:00:00'),
+(8, 10, 14, 800000, 'Rika', 'Santoso', 'rika@example.com', 1, '2021-02-21 00:00:00'),
+(9, 4, 3, 400000, 'Nadia', 'Reva', 'nadiarevasr11@gmail.com', 1, '2023-07-06 14:11:49'),
+(10, 12, 16, 100000, 'Rudi', 'Saputra', 'rudi.saputra@example.com', 3, '2023-06-10 00:00:00'),
+(11, 4, 3, 100000, 'Nadia', 'Reva', 'nadiarevasr11@gmail.com', 1, '2023-07-06 14:16:26'),
+(12, 5, 4, 400000, 'diva', 'ivani', '21523217@gmail.com', 1, '2023-07-06 15:33:46'),
+(13, 5, 4, 400000, 'diva', 'ivani', '21523217@gmail.com', 1, '2023-07-06 15:41:47'),
+(14, 4, 3, 100000, 'Nadia', 'Reva', '21523175@students.uii.ac.id', 1, '2023-07-07 02:12:44'),
+(15, 17, 21, 150000, 'Rudi', 'Saputra', 'rudi.saputra@example.com', 1, '2021-02-21 00:00:00'),
+(16, 18, 22, 160000, 'Lina', 'Wijaya', 'lina.wijaya@example.com', 2, '2023-06-26 00:00:00'),
+(17, 19, 23, 170000, 'Hendra', 'Kusuma', 'hendra.kusuma@example.com', 3, '2023-06-10 00:00:00'),
+(18, 20, 24, 180000, 'Rina', 'Setiawan', 'rina.setiawan@example.com', 4, '2023-06-15 00:00:00'),
+(19, 21, 25, 190000, 'Lina', 'Wijaya', 'lina@example.com', 5, '2023-06-22 00:00:00'),
+(20, 22, 26, 200000, 'Arya', 'Saloka', 'arya@example.com', 6, '2023-06-25 00:00:00'),
+(21, 23, 27, 210000, 'Riska', 'Haryanti', 'riska@example.com', 7, '2023-07-01 00:00:00'),
+(22, 24, 28, 220000, 'Aguswahyu', 'Wahyu', 'aguswahyu@example.com', 1, '2021-02-21 00:00:00'),
+(23, 25, 29, 230000, 'Bambang', 'Eko', 'bambang@example.com', 2, '2023-06-26 00:00:00'),
+(24, 26, 30, 240000, 'Sari', 'Tari', 'sari@example.com', 3, '2023-06-10 00:00:00'),
+(25, 27, 31, 250000, 'Doni', 'Yono', 'doni@example.com', 4, '2023-06-15 00:00:00'),
+(26, 28, 32, 260000, 'Ani', 'Wijaya', 'aniwijaya@example.com', 5, '2023-06-22 00:00:00'),
+(27, 29, 33, 270000, 'Fajar', 'Mulya', 'fajarmulya@example.com', 6, '2023-06-25 00:00:00'),
+(28, 30, 34, 280000, 'Novita', 'Kusuma', 'novitakusuma@example.com', 7, '2023-07-01 00:00:00'),
+(29, 31, 35, 290000, 'Tiara', 'Ramadhani', 'tiararamadhani@example.com', 1, '2021-02-21 00:00:00'),
+(30, 32, 36, 300000, 'Yogi', 'Pratama', 'yogipratama@example.com', 2, '2023-06-26 00:00:00'),
+(31, 33, 37, 310000, 'Diah', 'Permatasari', 'diahpermatasari@example.com', 3, '2023-06-10 00:00:00'),
+(32, 34, 38, 320000, 'Fadli', 'Firmansyah', 'fadlifirmansyah@example.com', 4, '2023-06-15 00:00:00'),
+(33, 35, 39, 330000, 'Nurul', 'Hidayah', 'nurulhidayah@example.com', 5, '2023-06-22 00:00:00'),
+(34, 36, 40, 340000, 'Yusuf', 'Wibowo', 'yusufwibowo@example.com', 6, '2023-06-25 00:00:00'),
+(35, 37, 41, 350000, 'Riri', 'Indriani', 'ririindriani@example.com', 7, '2023-07-01 00:00:00'),
+(36, 38, 42, 360000, 'Indra', 'Saputra', 'indra_saputra@example.com', 1, '2021-02-21 00:00:00'),
+(37, 39, 43, 370000, 'Dina', 'Wijaya', 'dina_wijaya@example.com', 7, '2023-07-01 00:00:00'),
+(38, 40, 44, 380000, 'Aisyah', 'Putri', 'aisyah_putri@example.com', 1, '2021-02-21 00:00:00'),
+(39, 41, 45, 390000, 'Yoga', 'Kurniawan', 'yoga_kurniawan@example.com', 2, '2023-06-26 00:00:00'),
+(40, 42, 46, 400000, 'Dewi', 'Rahayu', 'dewi_rahayu@example.com', 3, '2023-06-10 00:00:00'),
+(41, 43, 47, 410000, 'Ahmad', 'Syahid', 'ahmad_syahid@example.com', 4, '2023-06-15 00:00:00'),
+(42, 44, 48, 420000, 'Rina', 'Dewi', 'rina_dewi@example.com', 5, '2023-06-22 00:00:00'),
+(43, 45, 49, 430000, 'Agus', 'Hidayat', 'agus_hidayat@example.com', 6, '2023-06-25 00:00:00'),
+(44, 46, 50, 440000, 'Mayang', 'Sari', 'mayang_sari@example.com', 7, '2023-07-01 00:00:00'),
+(45, 47, 51, 450000, 'Arif', 'Maulana', 'arif_maulana@example.com', 1, '2021-02-21 00:00:00'),
+(46, 48, 52, 460000, 'Siti', 'Nurhayati', 'siti_nurhayati@example.com', 2, '2023-06-26 00:00:00'),
+(47, 49, 53, 470000, 'Andri', 'Susanto', 'andri_susanto@example.com', 3, '2023-06-10 00:00:00'),
+(48, 50, 54, 480000, 'Nita', 'Purnama', 'nita_purnama@example.com', 4, '2023-06-15 00:00:00'),
+(49, 51, 55, 490000, 'Hadi', 'Satoso', 'hadi_satoso@example.com', 5, '2023-06-22 00:00:00'),
+(50, 6, 10, 150000, 'Siti', 'Rahayu', 'siti.rahayu@example.com', 3, '2023-06-15 00:00:00'),
+(51, 7, 11, 80000, 'Agus', 'Susanto', 'agus.susanto@example.com', 1, '2023-05-09 00:00:00'),
+(52, 8, 12, 120000, 'Tri', 'Utami', 'tri.utami@example.com', 4, '2023-07-15 00:00:00'),
+(53, 9, 13, 250000, 'Iwan', 'Prasetyo', 'iwan.prasetyo@example.com', 1, '2023-07-20 00:00:00'),
+(54, 10, 14, 60000, 'Rika', 'Setiawan', 'rika.setiawan@example.com', 5, '2023-07-25 00:00:00'),
+(55, 57, 61, 550000, 'Lina', 'Puspita', 'lina_puspita@example.com', 4, '2023-06-15 00:00:00'),
+(56, 7, 11, 300000, 'Agus', 'Susanto', 'agussusanto@gmail.com', 1, '2023-04-12 11:46:39'),
+(57, 59, 63, 570000, 'Lisa', 'Wardhani', 'lisa_wardhani@example.com', 6, '2023-06-25 00:00:00'),
+(58, 60, 64, 580000, 'Ari', 'Hermawan', 'ari_hermawan@example.com', 7, '2023-07-01 00:00:00'),
+(59, 61, 65, 590000, 'Riri', 'Santoso', 'riri_santoso@example.com', 1, '2021-02-21 00:00:00'),
+(60, 62, 66, 600000, 'Dewi', 'Putri', 'dewi_putri@example.com', 2, '2023-06-26 00:00:00'),
+(61, 63, 67, 610000, 'Agus', 'Ramadhan', 'agus_ramadhan@example.com', 3, '2023-06-10 00:00:00'),
+(62, 64, 68, 62000, 'Dina', 'Hidayati', 'dina_hidayati@example.com', 4, '2023-06-15 00:00:00'),
+(63, 65, 69, 63000, 'Anto', 'Wibowo', 'anto_wibowo@example.com', 5, '2023-06-22 00:00:00'),
+(64, 66, 70, 64000, 'Rina', 'Nurhayati', 'rina_nurhayati@example.com', 6, '2023-06-25 00:00:00'),
+(65, 67, 71, 65000, 'Fajar', 'Prasetyo', 'fajar_prasetyo@example.com', 7, '2023-07-01 00:00:00'),
+(66, 68, 72, 66000, 'Lisa', 'Purnama', 'lisa_purnama@example.com', 1, '2021-02-21 00:00:00'),
+(67, 69, 73, 67000, 'Budi', 'Awan', 'budi_awan@example.com', 2, '2023-06-26 00:00:00'),
+(68, 70, 74, 68000, 'Siti', 'Rachmawati', 'siti_rac,mawati@example.com', 3, '2023-06-10 00:00:00'),
+(69, 71, 75, 69000, 'Yoga', 'Santoso', 'yoga_santoso@example.com', 4, '2023-06-15 00:00:00'),
+(70, 72, 76, 70000, 'Lina', 'Hidayati', 'lina_hidayati@example.com', 5, '2023-06-22 00:00:00'),
+(71, 73, 77, 71000, 'Joko', 'Pangestu', 'joko_pangestu@example.com', 6, '2023-06-25 00:00:00'),
+(72, 74, 78, 72000, 'Nita', 'Anggraini', 'nita_anggraini@example.com', 7, '2023-07-01 00:00:00'),
+(73, 75, 79, 73000, 'Agus', 'Saputra', 'agus_saputra@example.com', 1, '2021-02-21 00:00:00'),
+(74, 76, 80, 74000, 'Santi', 'Dewi', 'santi_dewi@example.com', 2, '2023-06-26 00:00:00'),
+(75, 77, 81, 75000, 'Rudy', 'Pratama', 'rudy_pratama@example.com', 3, '2023-06-10 00:00:00'),
+(76, 78, 82, 76000, 'Lina', 'Kusuma', 'lina_kusuma@example.com', 4, '2023-06-15 00:00:00'),
+(77, 79, 83, 77000, 'Andi', 'Wibowo', 'andi_wibowo@example.com', 5, '2023-06-22 00:00:00'),
+(78, 80, 84, 78000, 'Sari', 'Putri', 'sari_putri@example.com', 6, '2023-06-25 00:00:00'),
+(79, 81, 85, 79000, 'Agus', 'Hermawan', 'agus_hermawan@example.com', 7, '2023-07-01 00:00:00'),
+(80, 82, 86, 80000, 'Dewi', 'Sari', 'dewi_sari@example.com', 1, '2021-02-21 00:00:00'),
+(81, 83, 87, 81000, 'Yoga', 'Pangestu', 'yoga_pangestu@example.com', 2, '2023-06-26 00:00:00'),
+(82, 84, 88, 82000, 'Dian', 'Nurhayati', 'dian_nurhayati@example.com', 3, '2023-06-10 00:00:00'),
+(83, 85, 89, 83000, 'Anto', 'Purnama', 'anto_purnama@example.com', 4, '2023-06-15 00:00:00'),
+(84, 86, 90, 84000, 'Sari', 'Ramadhani', 'sari_ramadhani@example.com', 5, '2023-06-22 00:00:00'),
+(85, 87, 91, 85000, 'Fajar', 'Wahyudi', 'fajar_wahyudi@example.com', 6, '2023-06-25 00:00:00'),
+(86, 88, 92, 86000, 'Lisa', 'Pangestu', 'lisa_pangestu@example.com', 7, '2023-07-01 00:00:00'),
+(87, 89, 93, 87000, 'Budi', 'Setiawan', 'budi_setiawan@example.com', 1, '2021-02-21 00:00:00'),
+(88, 90, 94, 88000, 'Siti', 'Mulyani', 'siti_mulyani@example.com', 2, '2023-06-26 00:00:00'),
+(89, 91, 95, 89000, 'Yoga', 'Wibowo', 'yoga_wibowo@example.com', 3, '2023-06-10 00:00:00'),
+(90, 92, 96, 90000, 'Lina', 'Setiawan', 'lina_setiawan@example.com', 4, '2023-06-15 00:00:00'),
+(91, 93, 97, 91000, 'Joko', 'Saputra', 'joko_saputra@example.com', 5, '2023-06-22 00:00:00'),
+(92, 94, 98, 92000, 'Nita', 'Dewi', 'nita_dewi@example.com', 6, '2023-06-25 00:00:00'),
+(93, 95, 99, 93000, 'Agus', 'Anggraini', 'agus_anggraini@example.com', 7, '2023-07-01 00:00:00'),
+(94, 96, 100, 94000, 'Santi', 'Ramadhani', 'santi_ramadhani@example.com', 1, '2021-02-21 00:00:00'),
+(95, 97, 101, 95000, 'Rudy', 'Wahyudi', 'rudy_wahyudi@example.com', 2, '2023-06-26 00:00:00'),
+(96, 98, 102, 96000, 'Fajar', 'Maulana', 'fajar_maulana@example.com', 3, '2023-06-10 00:00:00'),
+(97, 99, 103, 97000, 'Dina', 'Hidayati', 'dina_hidayati@example.com', 4, '2023-06-15 00:00:00'),
+(98, 100, 104, 98000, 'Anto', 'Wibowo', 'anto_wibowo@example.com', 5, '2023-06-22 00:00:00'),
+(99, 101, 105, 99000, 'Sari', 'Ramadhani', 'sari_ramadhani@example.com', 6, '2023-06-25 00:00:00'),
+(100, 102, 106, 100000, 'Fajar', 'Wahyudi', 'fajar_wahyudi@example.com', 7, '2023-07-01 00:00:00'),
+(101, 103, 107, 101000, 'Lisa', 'Pangestu', 'lisa_pangestu@example.com', 1, '2021-02-21 00:00:00'),
+(102, 104, 108, 102000, 'Budi', 'Setiawan', 'budi_setiawan@example.com', 2, '2023-06-26 00:00:00'),
+(103, 105, 109, 103000, 'Siti', 'Mulyani', 'siti_mulyani@example.com', 3, '2023-06-10 00:00:00'),
+(104, 106, 110, 104000, 'Yoga', 'Wibowo', 'yoga_wibowo@example.com', 4, '2023-06-15 00:00:00'),
+(105, 107, 111, 105000, 'Lina', 'Setiawan', 'lina_setiawan@example.com', 5, '2023-06-22 00:00:00'),
+(106, 108, 112, 106000, 'Joko', 'Saputra', 'joko_saputra@example.com', 6, '2023-06-25 00:00:00'),
+(107, 109, 113, 107000, 'Nita', 'Dewi', 'nita_dewi@example.com', 7, '2023-07-01 00:00:00'),
+(108, 110, 114, 108000, 'Agus', 'Anggraini', 'agus_anggraini@example.com', 1, '2021-02-21 00:00:00'),
+(109, 111, 115, 109000, 'Santi', 'Ramadhani', 'santi_ramadhani@example.com', 2, '2023-06-26 00:00:00'),
+(110, 112, 116, 110000, 'Rudy', 'Wahyudi', 'rudy_wahyudi@example.com', 3, '2023-06-10 00:00:00'),
+(111, 113, 117, 111000, 'Fajar', 'Maulana', 'fajar_maulana@example.com', 4, '2023-06-15 00:00:00'),
+(112, 114, 118, 112000, 'Dina', 'Hidayati', 'dina_hidayati@example.com', 5, '2023-06-22 00:00:00'),
+(113, 115, 119, 113000, 'Anto', 'Wibowo', 'anto_wibowo@example.com', 6, '2023-06-25 00:00:00'),
+(114, 116, 120, 114000, 'Sari', 'Ramadhani', 'sari_ramadhani@example.com', 7, '2023-07-01 00:00:00');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tb_user`
+--
+
+CREATE TABLE `tb_user` (
+  `id` int(30) NOT NULL,
+  `username` varchar(35) NOT NULL,
+  `email` varchar(30) NOT NULL,
+  `password` varchar(30) NOT NULL,
+  `role` enum('user','admin') DEFAULT 'user'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `tb_user`
+--
+
+INSERT INTO `tb_user` (`id`, `username`, `email`, `password`, `role`) VALUES
+(1, 'jihan', 'jhsyah14@gmail.com', '123', 'admin'),
+(4, 'nadia', 'nadia@gmail.com', '321', 'user'),
+(5, 'diva', '21523217@gmail.com', '312', 'user'),
+(6, 'santi89', 'santi@example.com', 'password123', 'user'),
+(7, 'agus456', 'agus@example.com', 'password456', 'user'),
+(8, 'tri765', 'tri@example.com', 'adminpass', 'user'),
+(9, 'iwanprst', 'iwan@example.com', 'moderatorpass', 'user'),
+(10, 'rikaset43', 'rika@example.com', 'testpass', 'user'),
+(11, 'Dewi', 'dewi.lestari@example.com', '113', 'user'),
+(12, 'Rudi', 'rudi.saputra@example.com', '124', 'user'),
+(13, 'Lina', 'lina.wijaya@example.com', '132', 'user'),
+(14, 'Hendra', 'hendra.kusuma@example.com', '214', 'user'),
+(15, 'Rina', 'rina.setiawan@example.com', '155', 'user'),
+(16, 'Dewi', 'dewi.lestari@example.com', '113', 'user'),
+(17, 'Rudi', 'rudi.saputra@example.com', '124', 'user'),
+(18, 'Lina', 'lina.wijaya@example.com', '132', 'user'),
+(19, 'Hendra', 'hendra.kusuma@example.com', '214', 'user'),
+(20, 'Rina', 'rina.setiawan@example.com', '155', 'user'),
+(21, 'lina99', 'lina@example.com', 'password123', 'user'),
+(22, 'arya456', 'arya@example.com', 'password456', 'user'),
+(23, 'riska_23', 'riska@example.com', 'password123', 'user'),
+(24, 'aguswahyu', 'aguswahyu@example.com', 'password456', 'user'),
+(25, 'bambang', 'bambang@example.com', 'password789', 'user'),
+(26, 'sari_99', 'sari@example.com', 'password987', 'user'),
+(27, 'doni21', 'doni@example.com', 'password654', 'user'),
+(28, 'aniwijaya', 'aniwijaya@example.com', 'password123', 'user'),
+(29, 'fajarmulya', 'fajarmulya@example.com', 'password456', 'user'),
+(30, 'novitakusuma', 'novitakusuma@example.com', 'password789', 'user'),
+(31, 'tiararamadhani', 'tiararamadhani@example.com', 'password987', 'user'),
+(32, 'yogipratama', 'yogipratama@example.com', 'password654', 'user'),
+(33, 'diahpermatasari', 'diahpermatasari@example.com', 'password123', 'user'),
+(34, 'fadlifirmansyah', 'fadlifirmansyah@example.com', 'password456', 'user'),
+(35, 'nurulhidayah', 'nurulhidayah@example.com', 'password789', 'user'),
+(36, 'yusufwibowo', 'yusufwibowo@example.com', 'password987', 'user'),
+(37, 'ririindriani', 'ririindriani@example.com', 'password654', 'user'),
+(38, 'indra_saputra', 'indra_saputra@example.com', 'password123', 'user'),
+(39, 'aisyah_putri', 'aisyah_putri@example.com', 'password456', 'user'),
+(40, 'yoga_kurniawan', 'yoga_kurniawan@example.com', 'password789', 'user'),
+(41, 'dewi_rahayu', 'dewi_rahayu@example.com', 'password987', 'user'),
+(42, 'ahmad_syahid', 'ahmad_syahid@example.com', 'password654', 'user'),
+(43, 'rina_dewi', 'rina_dewi@example.com', 'password123', 'user'),
+(44, 'agus_hidayat', 'agus_hidayat@example.com', 'password456', 'user'),
+(45, 'mayang_sari', 'mayang_sari@example.com', 'password789', 'user'),
+(46, 'arif_maulana', 'arif_maulana@example.com', 'password987', 'user'),
+(47, 'siti_nurhayati', 'siti_nurhayati@example.com', 'password654', 'user'),
+(48, 'andri_susanto', 'andri_susanto@example.com', 'password123', 'user'),
+(49, 'nita_purnama', 'nita_purnama@example.com', 'password456', 'user'),
+(50, 'hadi_santoso', 'hadi_santoso@example.com', 'password789', 'user'),
+(51, 'sinta_wijaya', 'sinta_wijaya@example.com', 'password987', 'user'),
+(52, 'aryo_pratama', 'aryo_pratama@example.com', 'password654', 'user'),
+(53, 'adi_mulyadi', 'adi_mulyadi@example.com', 'password123', 'user'),
+(54, 'rini_widya', 'rini_widya@example.com', 'password456', 'user'),
+(55, 'agus_tri', 'agus_tri@example.com', 'password789', 'user'),
+(56, 'lina_puspita', 'lina_puspita@example.com', 'password987', 'user'),
+(57, 'yogi_prabowo', 'yogi_prabowo@example.com', 'password654', 'user'),
+(58, 'lisa_wardhani', 'lisa_wardhani@example.com', 'password123', 'user'),
+(59, 'ari_hermawan', 'ari_hermawan@example.com', 'password456', 'user'),
+(60, 'riri_santoso', 'riri_santoso@example.com', 'password789', 'user'),
+(61, 'dewi_putri', 'dewi_putri@example.com', 'password987', 'user'),
+(62, 'agus_ramadhan', 'agus_ramadhan@example.com', 'password654', 'user'),
+(63, 'dina_hidayati', 'dina_hidayati@example.com', 'password123', 'user'),
+(64, 'anto_wibowo', 'anto_wibowo@example.com', 'password456', 'user'),
+(65, 'rina_nurhayati', 'rina_nurhayati@example.com', 'password789', 'user'),
+(66, 'fajar_prasetyo', 'fajar_prasetyo@example.com', 'password987', 'user'),
+(67, 'lisa_purnama', 'lisa_purnama@example.com', 'password654', 'user'),
+(68, 'budi_awan', 'budi_awan@example.com', 'password123', 'user'),
+(69, 'siti_rachmawati', 'siti_rachmawati@example.com', 'password456', 'user'),
+(70, 'yoga_santoso', 'yoga_santoso@example.com', 'password789', 'user'),
+(71, 'lina_hidayati', 'lina_hidayati@example.com', 'password987', 'user'),
+(72, 'joko_pangestu', 'joko_pangestu@example.com', 'password654', 'user'),
+(73, 'nita_anggraini', 'nita_anggraini@example.com', 'password123', 'user'),
+(74, 'agus_saputra', 'agus_saputra@example.com', 'password456', 'user'),
+(75, 'santi_dewi', 'santi_dewi@example.com', 'password789', 'user'),
+(76, 'rudy_pratama', 'rudy_pratama@example.com', 'password987', 'user'),
+(77, 'lina_kusuma', 'lina_kusuma@example.com', 'password654', 'user'),
+(78, 'andi_wibowo', 'andi_wibowo@example.com', 'password123', 'user'),
+(79, 'sari_putri', 'sari_putri@example.com', 'password456', 'user'),
+(80, 'agus_hermawan', 'agus_hermawan@example.com', 'password789', 'user'),
+(81, 'dewi_sari', 'dewi_sari@example.com', 'password987', 'user'),
+(82, 'yoga_pangestu', 'yoga_pangestu@example.com', 'password654', 'user'),
+(83, 'dian_nurhayati', 'dian_nurhayati@example.com', 'password123', 'user'),
+(84, 'anto_purnama', 'anto_purnama@example.com', 'password456', 'user'),
+(85, 'sari_ramadhani', 'sari_ramadhani@example.com', 'password789', 'user'),
+(86, 'fajar_wahyudi', 'fajar_wahyudi@example.com', 'password987', 'user'),
+(87, 'lisa_pangestu', 'lisa_pangestu@example.com', 'password654', 'user'),
+(88, 'budi_setiawan', 'budi_setiawan@example.com', 'password123', 'user'),
+(89, 'siti_mulyani', 'siti_mulyani@example.com', 'password456', 'user'),
+(90, 'yoga_wibowo', 'yoga_wibowo@example.com', 'password789', 'user'),
+(91, 'lina_setiawan', 'lina_setiawan@example.com', 'password987', 'user'),
+(92, 'joko_saputra', 'joko_saputra@example.com', 'password654', 'user'),
+(93, 'nita_dewi', 'nita_dewi@example.com', 'password123', 'user'),
+(94, 'agus_anggraini', 'agus_anggraini@example.com', 'password456', 'user'),
+(95, 'santi_ramadhani', 'santi_ramadhani@example.com', 'password789', 'user'),
+(96, 'rudy_wahyudi', 'rudy_wahyudi@example.com', 'password987', 'user'),
+(97, 'fajar_maulana', 'fajar_maulana@example.com', 'password123', 'user'),
+(98, 'dina_wijaya', 'dina_wijaya@example.com', 'password456', 'user'),
+(99, 'agus_setiawan', 'agus_setiawan@example.com', 'password789', 'user'),
+(100, 'lina_dewi', 'lina_dewi@example.com', 'password987', 'user'),
+(101, 'yoga_purnama', 'yoga_purnama@example.com', 'password654', 'user'),
+(102, 'rani_santoso', 'rani_santoso@example.com', 'password123', 'user'),
+(103, 'agus_hidayat', 'agus_hidayat@example.com', 'password456', 'user'),
+(104, 'lisa_wijaya', 'lisa_wijaya@example.com', 'password789', 'user'),
+(105, 'dewi_ramadhani', 'dewi_ramadhani@example.com', 'password987', 'user'),
+(106, 'yogi_setiawan', 'yogi_setiawan@example.com', 'password654', 'user'),
+(107, 'rina_hermawan', 'rina_hermawan@example.com', 'password123', 'user'),
+(108, 'dani_wijaya', 'dani_wijaya@example.com', 'password456', 'user'),
+(109, 'sari_ramadhani', 'sari_ramadhani@example.com', 'password789', 'user'),
+(110, 'fajar_setiawan', 'fajar_setiawan@example.com', 'password987', 'user'),
+(111, 'lisa_pangestu', 'lisa_pangestu@example.com', 'password654', 'user'),
+(112, 'agus_saputra', 'agus_saputra@example.com', 'password123', 'user'),
+(113, 'dewi_nurhayati', 'dewi_nurhayati@example.com', 'password456', 'user'),
+(114, 'yoga_ramadhani', 'yoga_ramadhani@example.com', 'password789', 'user'),
+(115, 'rani_hermawan', 'rani_hermawan@example.com', 'password987', 'user'),
+(116, 'dani_setiawan', 'dani_setiawan@example.com', 'password654', 'user');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `tb_card`
+--
+ALTER TABLE `tb_card`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `user_id` (`user_id`);
+
+--
+-- Indexes for table `tb_donation`
+--
+ALTER TABLE `tb_donation`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `tb_donator`
+--
+ALTER TABLE `tb_donator`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `user_id` (`user_id`),
+  ADD KEY `card_id` (`card_id`),
+  ADD KEY `donation_id` (`donation_id`);
+
+--
+-- Indexes for table `tb_user`
+--
+ALTER TABLE `tb_user`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `tb_card`
+--
+ALTER TABLE `tb_card`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=121;
+
+--
+-- AUTO_INCREMENT for table `tb_donation`
+--
+ALTER TABLE `tb_donation`
+  MODIFY `id` int(30) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+
+--
+-- AUTO_INCREMENT for table `tb_donator`
+--
+ALTER TABLE `tb_donator`
+  MODIFY `id` int(30) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=115;
+
+--
+-- AUTO_INCREMENT for table `tb_user`
+--
+ALTER TABLE `tb_user`
+  MODIFY `id` int(30) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=117;
+
+--
+-- Constraints for dumped tables
+--
+
+--
+-- Constraints for table `tb_card`
+--
+ALTER TABLE `tb_card`
+  ADD CONSTRAINT `tb_card_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `tb_user` (`id`);
+
+--
+-- Constraints for table `tb_donator`
+--
+ALTER TABLE `tb_donator`
+  ADD CONSTRAINT `tb_donator_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `tb_user` (`id`),
+  ADD CONSTRAINT `tb_donator_ibfk_2` FOREIGN KEY (`card_id`) REFERENCES `tb_card` (`id`),
+  ADD CONSTRAINT `tb_donator_ibfk_3` FOREIGN KEY (`donation_id`) REFERENCES `tb_donation` (`id`);
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
